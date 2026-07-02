@@ -26,6 +26,9 @@ Then run the benchmark:
 
 *python3 benchmark.py*
 
+<img width="1919" height="1079" alt="run_terminal" src="https://github.com/user-attachments/assets/9180295e-127c-4064-b5a2-a129f496baba" />
+
+
 Note: plain \`python3 setup.py build\` also compiles the extension, but it places the \`.so\` file inside \`build/lib.../\` instead of the project folder, so \`import fastsum\` fails with \`ModuleNotFoundError\`. Using \`build_ext --inplace\` copies the compiled module into the current directory so the benchmark script can find it.
 
 ## 
