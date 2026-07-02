@@ -78,16 +78,18 @@ Output from actually running the program and sending it signals:
 
 ```
 $ ./monitor_service &
-PID: 68586
+PID: 115303
 [Monitor Service] System running normally...
 
-$ kill -SIGUSR1 68586
+$ kill -SIGUSR1 115303
 System status requested by administrator.
 [Monitor Service] System running normally...        <- program kept going, as expected
 
-$ kill -SIGTERM 68586
+$ kill -SIGTERM 115303
 Emergency shutdown signal received.
 ```
+<img width="1919" height="1045" alt="run_terminal" src="https://github.com/user-attachments/assets/19e325db-c4dc-4c96-a500-cc169151dc36" />
+
 
 SIGUSR1 did not stop the program, while SIGTERM ended it cleanly, exactly as required.
 
