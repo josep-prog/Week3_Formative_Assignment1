@@ -20,13 +20,13 @@ I registered the function so that Python can import it like a normal module.
 
 First, build the C extension in place so Python can import it directly from this folder:
 
-*python3 setup.py build\_ext \--inplace*
+*python3 setup.py build_ext --inplace*
 
 Then run the benchmark:
 
 *python3 benchmark.py*
 
-Note: plain \`python3 setup.py build\` also compiles the extension, but it places the \`.so\` file inside \`build/lib.../\` instead of the project folder, so \`import fastsum\` fails with \`ModuleNotFoundError\`. Using \`build\_ext \--inplace\` copies the compiled module into the current directory so the benchmark script can find it.
+Note: plain \`python3 setup.py build\` also compiles the extension, but it places the \`.so\` file inside \`build/lib.../\` instead of the project folder, so \`import fastsum\` fails with \`ModuleNotFoundError\`. Using \`build_ext --inplace\` copies the compiled module into the current directory so the benchmark script can find it.
 
 ## 
 

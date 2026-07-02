@@ -1,0 +1,10 @@
+# Compiled binaries (build from source per each project's README)
+project1/data_sync
+project2/backup_tool
+project4/monitor_service
+
+# Python build artifacts (project3)
+__pycache__/
+*.so
+build/
+*.pyc

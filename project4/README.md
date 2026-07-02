@@ -14,7 +14,7 @@ I used SIGINT, SIGUSR1, and SIGTERM because each one represents a different kind
 
 ## **Implemented Solution**
 
-I wrote a C program called monitor\_service.c that runs in an infinite loop. Every 5 seconds, it prints a message saying the system is running normally.
+I wrote a C program called monitor_service.c that runs in an infinite loop. Every 5 seconds, it prints a message saying the system is running normally.
 
 Then I registered signal handlers using signal() so the program can respond when a signal is received.
 
@@ -30,11 +30,11 @@ The program also prints its PID so it can be controlled using the kill command.
 
 First, compile the program:
 
-*gcc monitor\_service.c \-o monitor\_service*
+*gcc monitor_service.c -o monitor_service*
 
 Run the program:
 
-*./monitor\_service*
+*./monitor_service*
 
 It will display its process ID (PID). Example:
 
@@ -44,8 +44,8 @@ It will display its process ID (PID). Example:
 
 In another terminal, use the PID to send signals:
 
-*kill \-SIGUSR1 12345*  
-*kill \-SIGTERM 12345*
+*kill -SIGUSR1 12345*  
+*kill -SIGTERM 12345*
 
 You can also press:
 
