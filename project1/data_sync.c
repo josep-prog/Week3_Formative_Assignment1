@@ -19,7 +19,7 @@ int main() {
     fclose(src);
     fclose(dst);
 
-    printf("Synchronization complete. \n");
+    printf("Synchronization complete.\n");
 
     return 0;
 }

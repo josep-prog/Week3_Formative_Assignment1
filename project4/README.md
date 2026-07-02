@@ -72,3 +72,22 @@ When signals are sent:
 * SIGINT → prints:  
   Monitor Service shutting down safely. and the program stops.
 
+## **Terminal Demonstration**
+
+Output from actually running the program and sending it signals:
+
+```
+$ ./monitor_service &
+PID: 68586
+[Monitor Service] System running normally...
+
+$ kill -SIGUSR1 68586
+System status requested by administrator.
+[Monitor Service] System running normally...        <- program kept going, as expected
+
+$ kill -SIGTERM 68586
+Emergency shutdown signal received.
+```
+
+SIGUSR1 did not stop the program, while SIGTERM ended it cleanly, exactly as required.
+

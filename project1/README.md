@@ -1,6 +1,6 @@
 # **Project 1: Investigating a Suspicious Binary**
 
-In this project, I  created  data\_sync.c  that acts like a file synchronization tool. Instead of running the executable to understand what it does, I investigated the ELF binary using analysis tools. This helped me learn how to examine a program safely and understand its purpose from its binary information.
+In this project, I created  data\_sync.c  that acts like a file synchronization tool. Instead of running the executable to understand what it does, I investigated the ELF binary using analysis tools. This helped me learn how to examine a program safely and understand its purpose from its binary information.
 
 ## **Why I Chose These Tools**
 
