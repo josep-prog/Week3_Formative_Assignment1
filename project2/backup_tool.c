@@ -11,7 +11,7 @@ int main() {
     backup = fopen("backup.txt", "w");
 
     if (source == NULL || backup == NULL) {
-        fprintf(log, "Error opening files\n");
+        fprintf(log, "Error  opening files\n");
         return 1;
     }
 
